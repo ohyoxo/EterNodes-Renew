@@ -1,6 +1,6 @@
 # ⚡ Eternodes 自动续期
 
-自动每天尝试在 Eternodes Discord 服务器发送 `/server renew` 并选择服务器，在续期窗口期内自动完成续期。
+自动每28天在 Eternodes Discord 服务器发送 `/server renew` 并选择服务器，在续期窗口期内自动完成续期。
 
 ## 使用方法
 
