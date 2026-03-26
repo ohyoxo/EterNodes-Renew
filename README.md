@@ -10,7 +10,7 @@
 
 ### 2. 设置 GitHub Secrets
 
-进入你 Fork 后的仓库 → **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
+**Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
 | Secret 名称 | 是否必填 | 说明 | 格式 |
 |-------------|----------|------|------|
@@ -20,19 +20,7 @@
 | `GOST_PROXY` | ⭕ 可选 | 代理地址，不填则直连 | `socks5://user:pass@host:port` |
 | `TG_BOT` | ⭕ 可选 | Telegram 通知，不填则跳过 | `CHAT_ID,BOT_TOKEN` |
 
-### 3. 修改脚本中的个人信息
-
-编辑 `eternodes_renew.sh`，将以下变量替换为你自己的信息：
-```bash
-USER_ID="你的Discord用户ID"    # F12 → 任意请求 → Headers → 找 X-Discord-User-ID，或右键个人头像→复制用户ID
-SERVER_VALUE="你的服务器ID"     # 在 Eternodes Bot 回复的下拉菜单中，F12 抓包 → interactions → Payload → values
-```
-
-### 4. 启用 Actions
-
-进入你的仓库 → **Actions** → 点击 **Enable** 启用工作流。
-
-### 5. 运行
+### 3. 运行
 
 - **自动运行**：每28天 UTC 03:00 自动执行，续期窗口期内会成功，窗口期外会失败但不影响
 - **手动运行**：Actions → Eternodes 续期 → Run workflow
